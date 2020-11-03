@@ -1,11 +1,13 @@
 # Docsy "mostly docs"
 
-This is an alternative version of the [Docsy just the docs](https://github.com/lisaFC/justdocs/) site that uses a documentation page as its home page, which each section also being documentation, rather than starting from `/docs/`.
 
-This version does not require a separate copy of the Docy theme's layouts, so is easier to keep in sync with the Docsy theme.
+This is an example site that uses the [Docsy](https://docsy.dev) Hugo theme.  It's an alternative version of the ["just the docs"](https://github.com/lisaFC/justdocs/) site that uses a documentation page as its home page, which each section also being documentation, rather than starting from `/docs/`.
 
-It does this by making use of the 
-[target-specifc front matter cascade feature](https://gohugo.io/content-management/front-matter/#front-matter-cascade) that was introduced in Hugo 0.76.0 (with a bug fixed in 0.77.0 that's required for this to work).
+You can see a preview of this site at https://mostlydocs.netlify.app/
+
+This version does not require a modified copy of the Docy theme's layouts, so is easier to keep in sync with the Docsy theme. It does this by making use of the [target-specifc front matter cascade feature](https://gohugo.io/content-management/front-matter/#front-matter-cascade) that was introduced in Hugo 0.76.0 (with a bug fixed in 0.77.0 that's required for this to work).
+
+It's currently based on a [fork of Docsy with a small change](https://github.com/gwatts/docsy/tree/feature/docs-only-support).
 
 If you take a look at `content/en/_index.md`, you'll see:
 
@@ -27,4 +29,4 @@ The `toc_root` setting causes the `blog` section to be removed from the main sec
 
 Otherwise it all works just like any other Docsy site.
 
-To use this for yourself, fork this project and change `content/en` as needed.
+To use this for yourself, fork this project and change `content/en` as needed (don't forget to run `git submodule init --recursive` to fetch the theme and its dependencies).
