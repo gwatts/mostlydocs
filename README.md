@@ -29,4 +29,4 @@ The `toc_root` setting causes the `blog` section to be removed from the main sec
 
 Otherwise it all works just like any other Docsy site.
 
-To use this for yourself, fork this project and change `content/en` as needed (don't forget to run `git submodule init --recursive` to fetch the theme and its dependencies).
+To use this for yourself, amke a copy of this template project and change `content/en` as needed (don't forget to run `git submodule init --recursive` to fetch the theme and its dependencies).
