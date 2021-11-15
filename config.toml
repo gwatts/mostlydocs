@@ -16,7 +16,9 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Uncomment to enable support for page tags
+# disableKinds = ["taxonomy", "term"]
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -70,6 +72,10 @@ weight = 1
 section = [ "HTML", "RSS", "print" ]
 
 # Everything below this are Site Params
+
+[taxonomies]
+tag = "tags"
+category = "categories"
 
 [params]
 copyright = "The Docsy Authors"
@@ -157,3 +163,5 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
+[params.taxonomy]
+taxonomyCloud = ["tags"]
