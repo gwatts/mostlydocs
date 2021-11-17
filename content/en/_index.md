@@ -3,6 +3,7 @@
 title: "Documentation"
 linkTitle: "Documentation"
 type: "docs"
+tags: ["intro"]
 weight: 20
 
 cascade:

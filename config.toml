@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "Mostly Docs"
 
 enableRobotsTXT = true
 
@@ -74,6 +74,8 @@ section = [ "HTML", "RSS", "print" ]
 # Everything below this are Site Params
 
 [taxonomies]
+# you can change these or add your own
+# see also params.taxonomy towards the end of this file.
 tag = "tags"
 category = "categories"
 
@@ -164,4 +166,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
         desc = "Discuss development issues around the project"
 
 [params.taxonomy]
-taxonomyCloud = ["tags"]
+taxonomyCloud = ["tags"] # set taxonomyCloud = [] to hide taxonomy clouds
+#taxonomyCloud = ["tags", "categories"] # set taxonomyCloud = [] to hide taxonomy clouds
+# taxonomyCloudTitle = ["Tag Cloud", "Cloud of Categories"] # if used, must have same lang as taxonomyCloud
+# taxonomyPageHeader = ["tags", "categories"] # set taxonomyPageHeader = [] to hide taxonomies on the page headers

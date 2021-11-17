@@ -2,6 +2,7 @@
 title: "Getting Started"
 linkTitle: "Getting Started"
 weight: 2
+tags: ["intro"]
 description: >
   What does your user need to know to try your project?
 ---
