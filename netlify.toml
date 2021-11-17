@@ -8,5 +8,5 @@
 
 # "production" environment specific build settings
 [build.environment]
-  HUGO_VERSION = "0.77.0"
+  HUGO_VERSION = "0.89.4"
   HUGO_ENV = "production"
