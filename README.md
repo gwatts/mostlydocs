@@ -32,10 +32,48 @@ The `toc_root` setting causes the `blog` section to be removed from the main sec
 
 Otherwise it all works just like any other Docsy site.
 
-To use this for yourself, make a copy of this template project and change `content/en` as needed (don't forget to run `git submodule update --init --recursive` to fetch the theme and its dependencies).
+## Using MostlyDocs as template
+
+A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this: 
+
+1. Click **Use this template**.
+
+2. Select a name for your new project and click **Create repository from template**.
+
+3. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
+
+```bash
+git clone --depth 1 https://github.com/me/example.git
+```
+
+You can now edit your own versions of the site’s source files at `content/en` as needed.
+
+If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
+
+```bash
+npm install
+```
+
+## Running the website locally
+
+Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
+You can find out more about how to install Hugo for your environment in our
+[Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) guide.
+
+Once you've made your working copy of the site repo, from the repo root folder, run:
+
+```
+hugo server
+```
+
+By default, docsy theme is pulled in as hugo module. To use docsy as git submodule, follow these steps:
+
+- uncomment the line `theme = ["docsy"]` in your `config.toml`
+- run `git submodule update --init --recursive` to fetch the theme
+- enter themes/docsy and run npm to install dependencies
 
 ## Taxonomy Support
 
-Taxonomies such as tags and categories work in the same way as they do with Docsy.  They are disabled by default. 
+Taxonomies such as tags and categories work in the same way as they do with Docsy. They are disabled by default. 
 
 See the [Docsy taxonomy support](https://www.docsy.dev/docs/adding-content/taxonomy/) documentation for instructions.
