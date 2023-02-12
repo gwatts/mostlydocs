@@ -4,9 +4,10 @@
 # Default build settings
 [build]
   publish = "public"
-  command = "git submodule update -f --init --recursive && npm install && hugo" 
+  command = "hugo" 
 
 # "production" environment specific build settings
 [build.environment]
-  HUGO_VERSION = "0.89.4"
+  HUGO_VERSION = "0.110.0"
+  GO_VERSION = "1.20"
   HUGO_ENV = "production"
